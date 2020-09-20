@@ -8,3 +8,4 @@ D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.cs
 D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.csproj.CoreCompileInputs.cache
 D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.exe
 D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.pdb
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.FindForm.resources

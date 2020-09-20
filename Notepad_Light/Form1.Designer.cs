@@ -52,6 +52,7 @@
             this.zoomDropDown = new System.Windows.Forms.ToolStripDropDownButton();
             this.zoomUPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomIncreaseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fIndNextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +89,7 @@
             this.cutToolStripMenuItem,
             this.pasteToolStripMenuItem,
             this.findToolStripMenuItem,
+            this.fIndNextToolStripMenuItem,
             this.undoToolStripMenuItem,
             this.redoToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
@@ -152,6 +154,7 @@
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.copyToolStripMenuItem.Text = "Copy";
+            this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // cutToolStripMenuItem
             // 
@@ -159,6 +162,7 @@
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.cutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cutToolStripMenuItem.Text = "Cut";
+            this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
             // pasteToolStripMenuItem
             // 
@@ -166,6 +170,7 @@
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
             this.pasteToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
+            this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
             // findToolStripMenuItem
             // 
@@ -173,6 +178,7 @@
             this.findToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.findToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.findToolStripMenuItem.Text = "Find";
+            this.findToolStripMenuItem.Click += new System.EventHandler(this.findToolStripMenuItem_Click);
             // 
             // undoToolStripMenuItem
             // 
@@ -180,13 +186,15 @@
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
             this.undoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.undoToolStripMenuItem.Text = "Undo";
+            this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // redoToolStripMenuItem
             // 
             this.redoToolStripMenuItem.Name = "redoToolStripMenuItem";
-            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
+            this.redoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Y)));
             this.redoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.redoToolStripMenuItem.Text = "Redo";
+            this.redoToolStripMenuItem.Click += new System.EventHandler(this.redoToolStripMenuItem_Click);
             // 
             // fontToolStripMenuItem
             // 
@@ -250,6 +258,13 @@
             this.zoomIncreaseToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.zoomIncreaseToolStripMenuItem.Text = "Zoom Increase";
             // 
+            // fIndNextToolStripMenuItem
+            // 
+            this.fIndNextToolStripMenuItem.Name = "fIndNextToolStripMenuItem";
+            this.fIndNextToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.fIndNextToolStripMenuItem.Text = "Find Next";
+            this.fIndNextToolStripMenuItem.Click += new System.EventHandler(this.fIndNextToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -298,6 +313,7 @@
         private System.Windows.Forms.ToolStripDropDownButton zoomDropDown;
         private System.Windows.Forms.ToolStripMenuItem zoomIncreaseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zoomUPToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fIndNextToolStripMenuItem;
     }
 }
 
