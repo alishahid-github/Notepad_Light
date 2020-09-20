@@ -1,0 +1,10 @@
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\bin\Debug\Notepad_Light.exe.config
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\bin\Debug\Notepad_Light.exe
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\bin\Debug\Notepad_Light.pdb
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.csprojAssemblyReference.cache
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.Form1.resources
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.Properties.Resources.resources
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.csproj.GenerateResource.cache
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.csproj.CoreCompileInputs.cache
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.exe
+D:\Visual Studio Projects\Notepad_Light\Notepad_Light\obj\Debug\Notepad_Light.pdb
