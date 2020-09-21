@@ -159,5 +159,10 @@ namespace Notepad_Light
             if (zoomCounter >= 1 && zoomCounter < 64)
                 richTextBox.ZoomFactor = zoomCounter;
         }
+
+        private void aboutNotePadLightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Classical version of Notepad.", "Notepad_Light", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

@@ -234,6 +234,7 @@
             this.aboutNotePadLightToolStripMenuItem.Name = "aboutNotePadLightToolStripMenuItem";
             this.aboutNotePadLightToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.aboutNotePadLightToolStripMenuItem.Text = "About NotePad Light";
+            this.aboutNotePadLightToolStripMenuItem.Click += new System.EventHandler(this.aboutNotePadLightToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
