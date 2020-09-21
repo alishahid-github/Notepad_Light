@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -70,6 +71,93 @@ namespace Notepad_Light
                 Thread.Sleep(1000);
             } while (MessageBox.Show("Do you want to Find Next?", "Find", MessageBoxButtons.OKCancel) == DialogResult.OK);
 
+        }
+
+        
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
+
+        string fileNameAndPath = "";
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrEmpty(fileNameAndPath))
+            {
+                richTextBox.SaveFile(fileNameAndPath);
+
+            }
+            else
+            {
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    fileNameAndPath = saveFileDialog1.FileName;
+                    richTextBox.SaveFile(fileNameAndPath);
+                }
+            }
+        }
+
+        private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                fileNameAndPath = saveFileDialog1.FileName;
+                richTextBox.SaveFile(fileNameAndPath);
+            }
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string data = File.ReadAllText(openFileDialog1.FileName);
+                richTextBox.Text = data;
+            }
+                
+        }
+
+        private void wordWrapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (richTextBox.WordWrap)
+                richTextBox.WordWrap = false;
+            else
+                richTextBox.WordWrap = true;
+        }
+
+        private void fontToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(fontDialog1.ShowDialog()==DialogResult.OK)
+            {
+                richTextBox.Font = fontDialog1.Font;
+                
+            }
+        }
+
+        private void richTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            LinesLabel.Text = "Lines " + richTextBox.Lines.Length;
+        }
+        int zoomCounter = 1;
+        private void zoomIncreaseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            zoomCounter++;
+            if (zoomCounter >= 1 && zoomCounter < 64)
+                richTextBox.ZoomFactor = zoomCounter;
+        }
+
+        private void zoomUPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            zoomCounter--;
+            if (zoomCounter >= 1 && zoomCounter < 64)
+                richTextBox.ZoomFactor = zoomCounter;
         }
     }
 }
